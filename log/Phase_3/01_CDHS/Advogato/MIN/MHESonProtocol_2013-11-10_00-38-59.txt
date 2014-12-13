@@ -1,0 +1,482 @@
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+°                MHESon 0.9                     °
+°         Last change: 2013-11-09               °
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+
+================================================
+*** PARAMETRIZATION SETTINGS ***
+------------------------------------------------
+
+Printing parametrization settings. 
+For further information on parameters and their usage see documentation.
+
+  :: INFLUENCE_SET_PROBABILITY		0.5
+  :: NUMBER_OF_ROUND				9
+  :: NUMBER_OF_GROUPS				5
+  :: GROUP_LIMIT_DIVISOR			2
+  :: INTRINSIC_INTEREST_VALUE		0
+  :: MYOPIC_PRICE_DEFAULT			0
+  :: MYOPIC_PRICE_INFLUENCE_SET		-1
+  :: MYOPIC_PRICE_DEAF_NODES		-2
+  :: GM_ABSORB_SURPLUS_NODES		1
+  :: GM_DYNAMIC_SURPLUS_LIMITS		0
+  :: ANCDHS_POST_ROUND_PROBABILITY	0
+  :: ANCHDS_EP_ADJUSTMENT_FACTOR	0.333333
+  :: META_VERSION					0.9
+  :: META_LAST_CHANGE				2013-11-09
+
+------------------------------------------------
+*** Printed parametrization settings ***
+================================================
+
+
+
+================================================
+*** PHASE 0: Initialization ***
+------------------------------------------------
+
+  :: Chosen heuristic:			CDHS
+  :: Chosen file:				Advogato
+  :: Native edge weighting:		1
+  :: Directed:					1
+  :: Estimated vertex count:	6551
+
+  ## Time elapsed: 0 ms
+
+------------------------------------------------
+*** Finished phase 0 ***
+================================================
+
+
+
+================================================
+*** PHASE 1: Input Parsing ***
+------------------------------------------------
+
+  :: Input path is ../resources/Advogato/out.advogato_inverted_weighted.
+  :: Type of examined data file: ADVOGATO
+  :: Graph status 
+  ::   Size:					6551
+  ::   Capacity:				6551
+  ::   Passive/deaf vertices:	458
+
+  ## Time elapsed: 56 ms
+
+------------------------------------------------
+*** Finished phase 1 ***
+================================================
+
+
+
+================================================
+*** PHASE 2: Picking Influence Set ***
+------------------------------------------------
+
+  :: Probability x:				0.5
+  :: Number of vertices in IS:	3289 (50.2061%)
+
+  ## Time elapsed: 1 ms
+
+------------------------------------------------
+*** Finished phase 2 ***
+================================================
+
+
+
+================================================
+*** PHASE 3: Calculating Myopic Prices ***
+------------------------------------------------
+
+  :: Myopic price sum:							4918.2
+  :: Average myopic price:						1.50773
+  :: Median myopic price:						0.3
+  :: Number of deleted vertices incl. IS:		3528
+  :: Number of deleted vertices without IS:		239
+
+  ## Time elapsed: 10 ms
+
+------------------------------------------------
+*** Finished phase 3 ***
+================================================
+
+
+
+================================================
+*** PHASE 4: Mapping Vertices to Groups ***
+------------------------------------------------
+
+  :: Gathering vertex group data.
+
+  ::   Group #0
+  ::      - First index:	3022;	MP = 98.8
+  ::      - Last index:		3018;	MP = 49.5
+  ::      - Upper Limit:	98.8
+  ::      - Lower Limit:	49.4
+  ::      - Group offer:	49.5
+  ::      - Group members:	5
+
+  ::   Group #1
+  ::      - First index:	3017;	MP = 45.6
+  ::      - Last index:		3003;	MP = 26.8
+  ::      - Upper Limit:	49.4
+  ::      - Lower Limit:	24.7
+  ::      - Group offer:	26.8
+  ::      - Group members:	15
+
+  ::   Group #2
+  ::      - First index:	3002;	MP = 23.8
+  ::      - Last index:		2953;	MP = 12.4
+  ::      - Upper Limit:	24.7
+  ::      - Lower Limit:	12.35
+  ::      - Group offer:	12.4
+  ::      - Group members:	50
+
+  ::   Group #3
+  ::      - First index:	2952;	MP = 12.3
+  ::      - Last index:		2840;	MP = 6.2
+  ::      - Upper Limit:	12.35
+  ::      - Lower Limit:	6.175
+  ::      - Group offer:	6.2
+  ::      - Group members:	113
+
+  ::   Group #4
+  ::      - First index:	2839;	MP = 6.1
+  ::      - Last index:		2619;	MP = 3.1
+  ::      - Upper Limit:	6.175
+  ::      - Lower Limit:	3.0875
+  ::      - Group offer:	3.1
+  ::      - Group members:	221
+
+  :: Note: Vertex group pool qualifies as oversaturated.
+  :: Last vertex group is modified in order to incorporate surplus vertices. 
+  :: Non-empty groups: 5
+
+  ## Time elapsed: 1 ms
+
+------------------------------------------------
+*** Finished phase 4 ***
+================================================
+
+
+
+================================================
+*** PHASE 5: Iterative Offering ***
+------------------------------------------------
+
+
+  :: --- Round #1 --- 
+  ::     p = 0.0555556
+
+  ::    Group #0
+  ::       - Group offer:					49.5
+  ::       - Number of submitted offers:	1 (20% of all vertices in group)
+  ::       - Number of accepted offers:		1 (100% success rate)
+  ::       - Revenue:						49.5
+
+  ::    Group #1
+  ::       - Group offer:					26.8
+  ::       - Number of submitted offers:	1 (6.66667% of all vertices in group)
+  ::       - Number of accepted offers:		1 (100% success rate)
+  ::       - Revenue:						26.8
+
+  ::    Group #2
+  ::       - Group offer:					12.4
+  ::       - Number of submitted offers:	9 (18% of all vertices in group)
+  ::       - Number of accepted offers:		5 (55.5556% success rate)
+  ::       - Revenue:						62
+
+  ::    Group #3
+  ::       - Group offer:					6.2
+  ::       - Number of submitted offers:	15 (13.2743% of all vertices in group)
+  ::       - Number of accepted offers:		9 (60% success rate)
+  ::       - Revenue:						55.8
+
+  ::    Group #4
+  ::       - Group offer:					3.1
+  ::       - Number of submitted offers:	328 (11.5493% of all vertices in group)
+  ::       - Number of accepted offers:		26 (7.92683% success rate)
+  ::       - Revenue:						80.6
+
+
+  :: --- Round #2 --- 
+  ::     p = 0.0555556
+
+  ::    Group #0
+  ::       - Group offer:					49.5
+  ::       - Number of submitted offers:	1 (20% of all vertices in group)
+  ::       - Number of accepted offers:		0 (0% success rate)
+  ::       - Revenue:						0
+
+  ::    Group #1
+  ::       - Group offer:					26.8
+  ::       - Number of submitted offers:	2 (13.3333% of all vertices in group)
+  ::       - Number of accepted offers:		1 (50% success rate)
+  ::       - Revenue:						26.8
+
+  ::    Group #2
+  ::       - Group offer:					12.4
+  ::       - Number of submitted offers:	8 (16% of all vertices in group)
+  ::       - Number of accepted offers:		4 (50% success rate)
+  ::       - Revenue:						49.6
+
+  ::    Group #3
+  ::       - Group offer:					6.2
+  ::       - Number of submitted offers:	14 (12.3894% of all vertices in group)
+  ::       - Number of accepted offers:		7 (50% success rate)
+  ::       - Revenue:						43.4
+
+  ::    Group #4
+  ::       - Group offer:					3.1
+  ::       - Number of submitted offers:	322 (11.338% of all vertices in group)
+  ::       - Number of accepted offers:		28 (8.69565% success rate)
+  ::       - Revenue:						86.8
+
+
+  :: --- Round #3 --- 
+  ::     p = 0.0555556
+
+  ::    Group #0
+  ::       - Group offer:					49.5
+  ::       - Number of submitted offers:	0 (0% of all vertices in group)
+  ::       - Number of accepted offers:		0 (0% success rate)
+  ::       - Revenue:						0
+
+  ::    Group #1
+  ::       - Group offer:					26.8
+  ::       - Number of submitted offers:	0 (0% of all vertices in group)
+  ::       - Number of accepted offers:		0 (0% success rate)
+  ::       - Revenue:						0
+
+  ::    Group #2
+  ::       - Group offer:					12.4
+  ::       - Number of submitted offers:	5 (10% of all vertices in group)
+  ::       - Number of accepted offers:		2 (40% success rate)
+  ::       - Revenue:						24.8
+
+  ::    Group #3
+  ::       - Group offer:					6.2
+  ::       - Number of submitted offers:	15 (13.2743% of all vertices in group)
+  ::       - Number of accepted offers:		10 (66.6667% success rate)
+  ::       - Revenue:						62
+
+  ::    Group #4
+  ::       - Group offer:					3.1
+  ::       - Number of submitted offers:	319 (11.2324% of all vertices in group)
+  ::       - Number of accepted offers:		25 (7.83699% success rate)
+  ::       - Revenue:						77.5
+
+
+  :: --- Round #4 --- 
+  ::     p = 0.0555556
+
+  ::    Group #0
+  ::       - Group offer:					49.5
+  ::       - Number of submitted offers:	1 (20% of all vertices in group)
+  ::       - Number of accepted offers:		1 (100% success rate)
+  ::       - Revenue:						49.5
+
+  ::    Group #1
+  ::       - Group offer:					26.8
+  ::       - Number of submitted offers:	2 (13.3333% of all vertices in group)
+  ::       - Number of accepted offers:		1 (50% success rate)
+  ::       - Revenue:						26.8
+
+  ::    Group #2
+  ::       - Group offer:					12.4
+  ::       - Number of submitted offers:	11 (22% of all vertices in group)
+  ::       - Number of accepted offers:		9 (81.8182% success rate)
+  ::       - Revenue:						111.6
+
+  ::    Group #3
+  ::       - Group offer:					6.2
+  ::       - Number of submitted offers:	15 (13.2743% of all vertices in group)
+  ::       - Number of accepted offers:		11 (73.3333% success rate)
+  ::       - Revenue:						68.2
+
+  ::    Group #4
+  ::       - Group offer:					3.1
+  ::       - Number of submitted offers:	352 (12.3944% of all vertices in group)
+  ::       - Number of accepted offers:		37 (10.5114% success rate)
+  ::       - Revenue:						114.7
+
+
+  :: --- Round #5 --- 
+  ::     p = 0.0555556
+
+  ::    Group #0
+  ::       - Group offer:					49.5
+  ::       - Number of submitted offers:	0 (0% of all vertices in group)
+  ::       - Number of accepted offers:		0 (0% success rate)
+  ::       - Revenue:						0
+
+  ::    Group #1
+  ::       - Group offer:					26.8
+  ::       - Number of submitted offers:	3 (20% of all vertices in group)
+  ::       - Number of accepted offers:		1 (33.3333% success rate)
+  ::       - Revenue:						26.8
+
+  ::    Group #2
+  ::       - Group offer:					12.4
+  ::       - Number of submitted offers:	6 (12% of all vertices in group)
+  ::       - Number of accepted offers:		3 (50% success rate)
+  ::       - Revenue:						37.2
+
+  ::    Group #3
+  ::       - Group offer:					6.2
+  ::       - Number of submitted offers:	9 (7.9646% of all vertices in group)
+  ::       - Number of accepted offers:		7 (77.7778% success rate)
+  ::       - Revenue:						43.4
+
+  ::    Group #4
+  ::       - Group offer:					3.1
+  ::       - Number of submitted offers:	279 (9.82394% of all vertices in group)
+  ::       - Number of accepted offers:		26 (9.319% success rate)
+  ::       - Revenue:						80.6
+
+
+  :: --- Round #6 --- 
+  ::     p = 0.0555556
+
+  ::    Group #0
+  ::       - Group offer:					49.5
+  ::       - Number of submitted offers:	2 (40% of all vertices in group)
+  ::       - Number of accepted offers:		1 (50% success rate)
+  ::       - Revenue:						49.5
+
+  ::    Group #1
+  ::       - Group offer:					26.8
+  ::       - Number of submitted offers:	0 (0% of all vertices in group)
+  ::       - Number of accepted offers:		0 (0% success rate)
+  ::       - Revenue:						0
+
+  ::    Group #2
+  ::       - Group offer:					12.4
+  ::       - Number of submitted offers:	2 (4% of all vertices in group)
+  ::       - Number of accepted offers:		1 (50% success rate)
+  ::       - Revenue:						12.4
+
+  ::    Group #3
+  ::       - Group offer:					6.2
+  ::       - Number of submitted offers:	11 (9.73451% of all vertices in group)
+  ::       - Number of accepted offers:		6 (54.5455% success rate)
+  ::       - Revenue:						37.2
+
+  ::    Group #4
+  ::       - Group offer:					3.1
+  ::       - Number of submitted offers:	310 (10.9155% of all vertices in group)
+  ::       - Number of accepted offers:		32 (10.3226% success rate)
+  ::       - Revenue:						99.2
+
+
+  :: --- Round #7 --- 
+  ::     p = 0.0555556
+
+  ::    Group #0
+  ::       - Group offer:					49.5
+  ::       - Number of submitted offers:	0 (0% of all vertices in group)
+  ::       - Number of accepted offers:		0 (0% success rate)
+  ::       - Revenue:						0
+
+  ::    Group #1
+  ::       - Group offer:					26.8
+  ::       - Number of submitted offers:	3 (20% of all vertices in group)
+  ::       - Number of accepted offers:		3 (100% success rate)
+  ::       - Revenue:						80.4
+
+  ::    Group #2
+  ::       - Group offer:					12.4
+  ::       - Number of submitted offers:	1 (2% of all vertices in group)
+  ::       - Number of accepted offers:		1 (100% success rate)
+  ::       - Revenue:						12.4
+
+  ::    Group #3
+  ::       - Group offer:					6.2
+  ::       - Number of submitted offers:	8 (7.07965% of all vertices in group)
+  ::       - Number of accepted offers:		6 (75% success rate)
+  ::       - Revenue:						37.2
+
+  ::    Group #4
+  ::       - Group offer:					3.1
+  ::       - Number of submitted offers:	337 (11.8662% of all vertices in group)
+  ::       - Number of accepted offers:		34 (10.089% success rate)
+  ::       - Revenue:						105.4
+
+
+  :: --- Round #8 --- 
+  ::     p = 0.0555556
+
+  ::    Group #0
+  ::       - Group offer:					49.5
+  ::       - Number of submitted offers:	0 (0% of all vertices in group)
+  ::       - Number of accepted offers:		0 (0% success rate)
+  ::       - Revenue:						0
+
+  ::    Group #1
+  ::       - Group offer:					26.8
+  ::       - Number of submitted offers:	3 (20% of all vertices in group)
+  ::       - Number of accepted offers:		2 (66.6667% success rate)
+  ::       - Revenue:						53.6
+
+  ::    Group #2
+  ::       - Group offer:					12.4
+  ::       - Number of submitted offers:	5 (10% of all vertices in group)
+  ::       - Number of accepted offers:		5 (100% success rate)
+  ::       - Revenue:						62
+
+  ::    Group #3
+  ::       - Group offer:					6.2
+  ::       - Number of submitted offers:	11 (9.73451% of all vertices in group)
+  ::       - Number of accepted offers:		9 (81.8182% success rate)
+  ::       - Revenue:						55.8
+
+  ::    Group #4
+  ::       - Group offer:					3.1
+  ::       - Number of submitted offers:	275 (9.6831% of all vertices in group)
+  ::       - Number of accepted offers:		26 (9.45455% success rate)
+  ::       - Revenue:						80.6
+
+
+  :: --- Round #9 --- 
+  ::     p = 0.0555556
+
+  ::    Group #0
+  ::       - Group offer:					49.5
+  ::       - Number of submitted offers:	0 (0% of all vertices in group)
+  ::       - Number of accepted offers:		0 (0% success rate)
+  ::       - Revenue:						0
+
+  ::    Group #1
+  ::       - Group offer:					26.8
+  ::       - Number of submitted offers:	1 (6.66667% of all vertices in group)
+  ::       - Number of accepted offers:		0 (0% success rate)
+  ::       - Revenue:						0
+
+  ::    Group #2
+  ::       - Group offer:					12.4
+  ::       - Number of submitted offers:	3 (6% of all vertices in group)
+  ::       - Number of accepted offers:		2 (66.6667% success rate)
+  ::       - Revenue:						24.8
+
+  ::    Group #3
+  ::       - Group offer:					6.2
+  ::       - Number of submitted offers:	15 (13.2743% of all vertices in group)
+  ::       - Number of accepted offers:		13 (86.6667% success rate)
+  ::       - Revenue:						80.6
+
+  ::    Group #4
+  ::       - Group offer:					3.1
+  ::       - Number of submitted offers:	318 (11.1972% of all vertices in group)
+  ::       - Number of accepted offers:		43 (13.522% success rate)
+  ::       - Revenue:						133.3
+
+
+  :: --- Summary ---
+  ::       - Purchased by 6.09067% of all agents (13.1988% when ignoring IS).
+  ::       - Number of submitted offers:						3023 (100% of all vertices exempt IS).
+  ::       - Number of accepted offers:							399 (13.1988% success rate)
+  ::       - Earned revenues:									2128.8
+  ::       - Average revenues (per agent):						0.324958
+  ::       - Average revenues (per purchasing agent / client):	5.33533
+***** Elapsed time in total: 100 ms *****
+
+

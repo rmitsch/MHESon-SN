@@ -1,0 +1,184 @@
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+°                MHESon 0.9                     °
+°         Last change: 2013-11-09               °
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+
+================================================
+*** PARAMETRIZATION SETTINGS ***
+------------------------------------------------
+
+Printing parametrization settings. 
+For further information on parameters and their usage see documentation.
+
+  :: INFLUENCE_SET_PROBABILITY		0.5
+  :: NUMBER_OF_ROUND				2
+  :: NUMBER_OF_GROUPS				2
+  :: GROUP_LIMIT_DIVISOR			2
+  :: INTRINSIC_INTEREST_VALUE		0
+  :: MYOPIC_PRICE_DEFAULT			0
+  :: MYOPIC_PRICE_INFLUENCE_SET		-1
+  :: MYOPIC_PRICE_DEAF_NODES		-2
+  :: GM_ABSORB_SURPLUS_NODES		1
+  :: GM_DYNAMIC_SURPLUS_LIMITS		0
+  :: ANCDHS_POST_ROUND_PROBABILITY	0
+  :: ANCHDS_EP_ADJUSTMENT_FACTOR	0.333333
+  :: META_VERSION					0.9
+  :: META_LAST_CHANGE				2013-11-09
+
+------------------------------------------------
+*** Printed parametrization settings ***
+================================================
+
+
+
+================================================
+*** PHASE 0: Initialization ***
+------------------------------------------------
+
+  :: Chosen heuristic:			CDHS
+  :: Chosen file:				DBLP
+  :: Native edge weighting:		1
+  :: Directed:					0
+  :: Estimated vertex count:	1248427
+
+  ## Time elapsed: 0 ms
+
+------------------------------------------------
+*** Finished phase 0 ***
+================================================
+
+
+
+================================================
+*** PHASE 1: Input Parsing ***
+------------------------------------------------
+
+  :: Input path is ../resources/DBLP/text/out.dblp_coauthor_inverted_reduced_weighted.
+  :: Type of examined data file: DBLP
+  :: Graph status 
+  ::   Size:					1103414
+  ::   Capacity:				1248427
+  ::   Passive/deaf vertices:	1
+
+  ## Time elapsed: 11200 ms
+
+------------------------------------------------
+*** Finished phase 1 ***
+================================================
+
+
+
+================================================
+*** PHASE 2: Picking Influence Set ***
+------------------------------------------------
+
+  :: Probability x:				0.5
+  :: Number of vertices in IS:	551598 (49.9901%)
+
+  ## Time elapsed: 312 ms
+
+------------------------------------------------
+*** Finished phase 2 ***
+================================================
+
+
+
+================================================
+*** PHASE 3: Calculating Myopic Prices ***
+------------------------------------------------
+
+  :: Myopic price sum:							942863
+  :: Average myopic price:						1.70865
+  :: Median myopic price:						0.693147
+  :: Number of deleted vertices incl. IS:		551598
+  :: Number of deleted vertices without IS:		0
+
+  ## Time elapsed: 3260 ms
+
+------------------------------------------------
+*** Finished phase 3 ***
+================================================
+
+
+
+================================================
+*** PHASE 4: Mapping Vertices to Groups ***
+------------------------------------------------
+
+  :: Gathering vertex group data.
+
+  ::   Group #0
+  ::      - First index:	551815;	MP = 247.503
+  ::      - Last index:		551797;	MP = 123.775
+  ::      - Upper Limit:	247.503
+  ::      - Lower Limit:	123.751
+  ::      - Group offer:	123.775
+  ::      - Group members:	19
+
+  ::   Group #1
+  ::      - First index:	551796;	MP = 123.153
+  ::      - Last index:		551618;	MP = 61.943
+  ::      - Upper Limit:	123.751
+  ::      - Lower Limit:	61.8756
+  ::      - Group offer:	61.943
+  ::      - Group members:	179
+
+  :: Note: Vertex group pool qualifies as oversaturated.
+  :: Last vertex group is modified in order to incorporate surplus vertices. 
+  :: Non-empty groups: 2
+
+  ## Time elapsed: 0 ms
+
+------------------------------------------------
+*** Finished phase 4 ***
+================================================
+
+
+
+================================================
+*** PHASE 5: Iterative Offering ***
+------------------------------------------------
+
+
+  :: --- Round #1 --- 
+  ::     p = 0.25
+
+  ::    Group #0
+  ::       - Group offer:					123.775
+  ::       - Number of submitted offers:	13 (68.4211% of all vertices in group)
+  ::       - Number of accepted offers:		7 (53.8462% success rate)
+  ::       - Revenue:						866.425
+
+  ::    Group #1
+  ::       - Group offer:					61.943
+  ::       - Number of submitted offers:	277688 (50.3243% of all vertices in group)
+  ::       - Number of accepted offers:		177 (0.0637406% success rate)
+  ::       - Revenue:						10963.9
+
+
+  :: --- Round #2 --- 
+  ::     p = 0.25
+
+  ::    Group #0
+  ::       - Group offer:					123.775
+  ::       - Number of submitted offers:	6 (31.5789% of all vertices in group)
+  ::       - Number of accepted offers:		5 (83.3333% success rate)
+  ::       - Revenue:						618.875
+
+  ::    Group #1
+  ::       - Group offer:					61.943
+  ::       - Number of submitted offers:	274108 (49.6755% of all vertices in group)
+  ::       - Number of accepted offers:		155 (0.0565471% success rate)
+  ::       - Revenue:						9601.16
+
+
+  :: --- Summary ---
+  ::       - Purchased by 0.031176% of all agents (0.0623396% when ignoring IS).
+  ::       - Number of submitted offers:						551815 (99.9998% of all vertices exempt IS).
+  ::       - Number of accepted offers:							344 (0.0623397% success rate)
+  ::       - Earned revenues:									22050.4
+  ::       - Average revenues (per agent):						0.0199838
+  ::       - Average revenues (per purchasing agent / client):	64.1001
+***** Elapsed time in total: 15849 ms *****
+
+
